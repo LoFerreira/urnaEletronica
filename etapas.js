@@ -4,13 +4,13 @@ let etapas = [
         numeros: 5,
         candidatos: [
             {
-                numero: 12345,
+                numero: '12345',
                 nome: 'Uzumaki Naruto',
                 partido: 'VILA DA FOLHA',
                 fotos:[{url:'naruto.jpg', legenda: 'Vereador'}]
             },
             {
-                numero: 54321,
+                numero: '54321',
                 nome: 'Uchiha Madara',
                 partido: 'AKATSUKI',
                 fotos:[{url:'madara.png', legenda: 'Vereador'}]
@@ -22,7 +22,7 @@ let etapas = [
         numeros: 2,
         candidatos: [
             {
-                numero: 12,
+                numero: '12',
                 nome: 'Hatake Kakashi',
                 partido: 'VILA DA FOLHA',
                 vice: 'Maito Gai',
@@ -32,7 +32,7 @@ let etapas = [
                 ]
             },
             {
-                numero: 54,
+                numero: '54',
                 nome: 'Uchiha Itachi',
                 partido: 'AKATSUKI',
                 vice: 'Hoshigaki Kisame',
