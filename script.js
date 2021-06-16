@@ -7,11 +7,14 @@ let numeros = document.querySelector('.d-1-3');
 
 let etapaAtual = 0;
 let numero = '';
+let votoBranco = false;
 
 function comecarEtapa() {
     let etapa = etapas[etapaAtual];
 
     let numeroHTML = '';
+    numero = "";
+    votoBranco = false;
 
     for(let i=0; i<etapa.numeros; i++) {
         if(i === 0) {
@@ -79,11 +82,19 @@ function clicou(n) {
 }
 
 function branco() {
-    alert('Clicou em branco');
+    if(numero === '') {
+        votoBranco = true;
+        seuVotoPara.style.display = 'block';
+        aviso.style.display = 'block';
+        numeros.innerHTML = '';
+        descricao.innerHTML = '<div class="aviso--grande pisca">VOTO EM BRANCO</div>'
+    } else {
+        alert('Para votar em BRANCO, não pode ter digitado nenhum número!')
+    }
 }
 
 function corrige() {
-    alert('Clicou em corrige');
+    comecarEtapa();
 }
 
 function confirma() {
